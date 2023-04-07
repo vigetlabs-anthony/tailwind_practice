@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-5xl font-semibold capitalize text-deep-lake;
+  }
+
+  h2 {
+    @apply text-4xl font-semibold uppercase text-deep-lake;
+  }
+
+  h3 {
+    @apply text-3xl font-semibold uppercase text-cool-blue;
+  }
+
+  h4 {
+    @apply text-2xl font-semibold uppercase text-cool-blue;
+  }
+
+  h5 {
+    @apply font-semibold capitalize text-gravel;
+  }
+
+  a {
+    @apply text-crimson underline decoration-dotted;
+  }
+
+  button {
+    @apply w-1/2 rounded-3xl p-5 font-semibold capitalize;
+  }
+}
+
+@layer components {
+  .primary-btn {
+    @apply border-4 border-wet-cement bg-wet-cement hover:border-gravel hover:bg-gravel;
+  }
+
+  .secondary-btn {
+    @apply border-4 border-candy-apple bg-candy-apple hover:border-crimson hover:bg-crimson;
+  }
+
+  .accent-btn {
+    @apply border-4 border-deep-lake bg-snow text-deep-lake hover:border-deep-lake hover:bg-deep-lake hover:text-snow;
+  }
+
+  .disabled-btn {
+    @apply disabled:bg-gravel disabled:text-wet-cement;
+  }
+}
